@@ -5,12 +5,10 @@ import HomePage from './views/homePage.vue';
 Vue.use(Router);
 
 export default new Router({
-  routes: [
-    {
-      path: '/homePage',
-      name: 'homePage',
-     
-      component: () => import("./views/homePage.vue")
-    },
-  ],
+  routes: [{
+    path: '/',
+    name: 'homePage',
+
+    component: () => import('./views/homePage.vue'),
+  }],
 });
